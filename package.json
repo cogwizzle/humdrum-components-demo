@@ -1,0 +1,39 @@
+{
+  "name": "humdrum-components-demo",
+  "version": "1.0.0",
+  "description": "Humdrum Components Demo",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "humdrum-components",
+    "riotjs",
+    "riot",
+    "es6",
+    "components",
+    "tag",
+    "JavaScript"
+  ],
+  "author": "Joseph Fehrman",
+  "license": "MIT",
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015-riot": "^1.1.0",
+    "css-loader": "^0.28.9",
+    "file-loader": "^1.1.6",
+    "jest": "^22.1.3",
+    "riot": "^3.8.1",
+    "riot-tag-loader": "^2.0.2",
+    "style-loader": "^0.19.1",
+    "url-loader": "^0.6.2",
+    "webpack": "^3.10.0"
+  },
+  "dependencies": {
+    "blaze": "^3.6.3",
+    "font-awesome": "^4.7.0",
+    "humdrum-components": "git+https://github.com/jfehrman/humdrum-components.git#c3c554df806903f622dacfc42353ddd2ae70f5cf"
+  }
+}
