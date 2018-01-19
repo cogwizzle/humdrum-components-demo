@@ -4,7 +4,7 @@ import 'humdrum-components/src/header_nav.tag';
 
 function clickEvent(event){
   let componentName = event.item.row.Name;
-  let uri = '/' + componentName.toLowerCase().replace(/ /g, '_') + '/';
+  let uri = './' + componentName.toLowerCase().replace(/ /g, '_') + '/';
   window.location = uri;
 }
 

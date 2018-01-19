@@ -3801,7 +3801,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 function clickEvent(event) {
   var componentName = event.item.row.Name;
-  var uri = '/' + componentName.toLowerCase().replace(/ /g, '_') + '/';
+  var uri = './' + componentName.toLowerCase().replace(/ /g, '_') + '/';
   window.location = uri;
 }
 
