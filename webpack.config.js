@@ -12,6 +12,7 @@ var config = {
     'header_nav': APP_DIR + '/header_nav.js',
     'table_list': APP_DIR + '/table_list.js',
     'login': APP_DIR + '/login.js',
+    'main': APP_DIR + '/main.js',
   },
   output: {
     path: BUILD_DIR,

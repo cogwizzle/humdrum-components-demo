@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 18);
+/******/ 	return __webpack_require__(__webpack_require__.s = 20);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -3875,7 +3875,9 @@ module.exports = AbstractField;
 /* 15 */,
 /* 16 */,
 /* 17 */,
-/* 18 */
+/* 18 */,
+/* 19 */,
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3885,7 +3887,7 @@ var _riot = __webpack_require__(0);
 
 var _riot2 = _interopRequireDefault(_riot);
 
-__webpack_require__(19);
+__webpack_require__(21);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -3916,7 +3918,7 @@ var inputDescriptions = [{
 _riot2.default.mount("dynamic_form", { "input_descriptions": inputDescriptions, "id": "formId", "action": "testActin", "method": "testMethod", "submit": true });
 
 /***/ }),
-/* 19 */
+/* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
@@ -3930,7 +3932,7 @@ var _riot2 = _interopRequireDefault(_riot);
 
 __webpack_require__(3);
 
-var _InputFactory = __webpack_require__(20);
+var _InputFactory = __webpack_require__(22);
 
 var _InputFactory2 = _interopRequireDefault(_InputFactory);
 
@@ -3961,7 +3963,7 @@ this.root.innerHTML = opts.content;
   
 
 /***/ }),
-/* 20 */
+/* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3971,23 +3973,23 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _TextField = __webpack_require__(21);
+var _TextField = __webpack_require__(23);
 
 var _TextField2 = _interopRequireDefault(_TextField);
 
-var _TextAreaField = __webpack_require__(22);
+var _TextAreaField = __webpack_require__(24);
 
 var _TextAreaField2 = _interopRequireDefault(_TextAreaField);
 
-var _PasswordField = __webpack_require__(23);
+var _PasswordField = __webpack_require__(25);
 
 var _PasswordField2 = _interopRequireDefault(_PasswordField);
 
-var _SelectField = __webpack_require__(24);
+var _SelectField = __webpack_require__(26);
 
 var _SelectField2 = _interopRequireDefault(_SelectField);
 
-var _CheckField = __webpack_require__(25);
+var _CheckField = __webpack_require__(27);
 
 var _CheckField2 = _interopRequireDefault(_CheckField);
 
@@ -4047,7 +4049,7 @@ exports.default = InputFactory;
 module.exports = InputFactory;
 
 /***/ }),
-/* 21 */
+/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4126,7 +4128,7 @@ exports.default = TextField;
 module.exports = TextField;
 
 /***/ }),
-/* 22 */
+/* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4204,7 +4206,7 @@ exports.default = TextAreaField;
 module.exports = TextAreaField;
 
 /***/ }),
-/* 23 */
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4283,7 +4285,7 @@ exports.default = PasswordField;
 module.exports = PasswordField;
 
 /***/ }),
-/* 24 */
+/* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -4380,7 +4382,7 @@ exports.default = SelectField;
 module.exports = SelectField;
 
 /***/ }),
-/* 25 */
+/* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";

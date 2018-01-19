@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 26);
+/******/ 	return __webpack_require__(__webpack_require__.s = 28);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -3903,7 +3903,9 @@ module.exports = __webpack_require__.p + "912ec66d7572ff821749319396470bde.svg";
 /* 23 */,
 /* 24 */,
 /* 25 */,
-/* 26 */
+/* 26 */,
+/* 27 */,
+/* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3913,7 +3915,7 @@ var _riot = __webpack_require__(0);
 
 var _riot2 = _interopRequireDefault(_riot);
 
-__webpack_require__(27);
+__webpack_require__(29);
 
 __webpack_require__(7);
 
@@ -3928,7 +3930,7 @@ _riot2.default.mount("floating_action_button", {
 });
 
 /***/ }),
-/* 27 */
+/* 29 */
 /***/ (function(module, exports, __webpack_require__) {
 
 

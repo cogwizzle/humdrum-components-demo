@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 16);
+/******/ 	return __webpack_require__(__webpack_require__.s = 18);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -3893,7 +3893,9 @@ module.exports = __webpack_require__.p + "b06871f281fee6b241d60582ae9369b9.ttf";
 module.exports = __webpack_require__.p + "912ec66d7572ff821749319396470bde.svg";
 
 /***/ }),
-/* 16 */
+/* 16 */,
+/* 17 */,
+/* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3903,7 +3905,7 @@ var _riot = __webpack_require__(0);
 
 var _riot2 = _interopRequireDefault(_riot);
 
-__webpack_require__(17);
+__webpack_require__(19);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -3913,7 +3915,7 @@ _riot2.default.mount("list_builder", {
 });
 
 /***/ }),
-/* 17 */
+/* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
 

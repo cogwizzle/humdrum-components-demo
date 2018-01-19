@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 30);
+/******/ 	return __webpack_require__(__webpack_require__.s = 34);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -3332,6 +3332,52 @@ _component.goto = function (event) {
 
 /***/ }),
 
+/***/ 17:
+/***/ (function(module, exports, __webpack_require__) {
+
+
+    var riot = __webpack_require__(0)
+    riot.tag2('table_list', '<table class="{tableClass}"> <thead class="c-table__head"> <tr class="c-table__row c-table__row--heading"> <th class="c-table__cell" each="{column in columns}">{column}</th> </tr> </thead> <tbody class="c-table__body"> <tr class="c-table__row" each="{row in data}" onclick="{parent.rowClick}"> <td class="c-table__cell" each="{column in columns}">{row[column]}</td> </tr> </tbody> </table>', '', '', function(opts) {
+'use strict';
+
+var _riot = __webpack_require__(0);
+
+var _riot2 = _interopRequireDefault(_riot);
+
+__webpack_require__(3);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var component = this;
+
+var getKeys = function getKeys(obj, keys) {
+  for (var key in obj) {
+    if (!keys.includes(key)) {
+      keys.push(key);
+    }
+  }
+  return keys;
+};
+
+component.data = opts.data;
+component.rowClick = opts.rowClick;
+component.columns = [];
+
+for (var i = 0; i < component.data.length; i++) {
+  component.columns = getKeys(component.data[i], component.columns);
+}
+
+component.tableClass = "c-table";
+if (component.rowClick) {
+  component.tableClass += " c-table--clickable";
+}
+});
+
+    
+  
+
+/***/ }),
+
 /***/ 2:
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -3737,7 +3783,7 @@ if(false) {
 
 /***/ }),
 
-/***/ 30:
+/***/ 34:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3747,14 +3793,26 @@ var _riot = __webpack_require__(0);
 
 var _riot2 = _interopRequireDefault(_riot);
 
+__webpack_require__(17);
+
 __webpack_require__(16);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function clickEvent(event) {
+  var componentName = event.item.row.Name;
+  var uri = '/' + componentName.toLowerCase().replace(/ /g, '_') + '/';
+  window.location = uri;
+}
+
+// Mount the element to the page.
+_riot2.default.mount('table_list', {
+  data: [{ "Name": "Dynamic Form", "Description": "Dynamic form build from input descriptions." }, { "Name": "Floating Action Button", "Description": "Floating action button that sits in the bottom right corner." }, { "Name": "Header Nav", "Description": "Header and Navigation component." }, { "Name": "Login", "Description": "Login component" }, { "Name": "Table List", "Description": "Generic way of showing JSON data." }],
+  rowClick: clickEvent
+});
+
 _riot2.default.mount('header_nav', {
-  page_heading: "DEMO", // The title of the page
-  links: [{ "uri": "http://www.google.com", "text": "The Google" }, // Navigation links that will appear on the page.
-  { "uri": "http://www.yahoo.com", "text": "Yahoo!" }, { "uri": "#hash", "text": "Hash" }]
+  page_heading: "DEMO" // The title of the page
 });
 
 /***/ }),
